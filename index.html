@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Simulated Satellite Display</title>
+        <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    </head>
+    <body>
+<!--
+1. A Title for the Project
+2. Purpose or objective of the project (in less than 4 or 5 sentences)
+3. Provide Data Sources with appropriate agency names and clickable web links
+At this time, I am expecting 1-3 data sources. This can be enriched further later.
+4. Provide Relevant Visualization sources with appropriate titles, agencies, time, and clickable
+web links
+The closest past project(s) (if any) must be cited under “Visualization Sources”. In addition, I am expecting 1-3
+visualization links. This can also be enriched further later.
+5. (optional) Any additional references references to articles or additional information on the
+project may be added as a separate link in a compact one page (and no more!)
+Host the above information on the web using an html/css file and supported via github. In this
+step, although you can attempt to have compact clutter-free presentation layout, the next step will
+require elegant presentation layout. In this step, you need to focus only on the contents.
+A. You must include your full name as it appears on the class roster; (no nick name please!).3
+B. You must include an email address that can be used by your classmates to form groups.
+C. A weblink stating Gitbub Link which is clickable and takes the user to the github link where
+your html and css files are located.
+-->
+        <a>Project Title</a>
+        <ul>
+            <li>Approximate Orbital Display</li>
+        </ul>
+        <a>Purpose or Objective</a>
+        <ul>
+            <li>To visualize an approximation of satellites orbiting the earth. 
+                A 3D display of earth that will be zoomable and show a position of satellites orbiting the planet. 
+                The Data needed is retreivable online-- Using the US airforce's "Space-Track.org" we can retrieve
+                TLE (Two Line Element) of satellite bodies and cross reference the satellite number with other data.
+                A JS library (satellite.js) will decipher and do all the heavy lifting-- allowing us to impliment the front end. 
+                After getting the inclination ect. we can display the satellites “orbit” 
+                and display some simple movement in real time. The Airforce has A L O T of TLEs, therefore I will probably only include some of the latest Satellites launched.</li>
+        </ul>
+        <a>Data Sources</a>
+        <ul>
+            <li><a href="https://www.ucsusa.org/nuclear-weapons/space-weapons/satellite-database#.WwNQeHXwak0">UCSUSA</a>
+            provides a .csv full of satellite information</li>
+            <li><a href="https://www.space-track.org/auth/login">Space-Track</a>
+            A US Airforce database of TLE's of all non-classified satellites</li>
+            <li><a href="https://www.heavens-above.com/main.aspx">Heavens Above Database</a>
+            Used in last years Satellite Flares project. Essencialy uses Space-Track and TLEs-- can be used to double check outputs.</li>
+        </ul>
+        <a>Relevant Visualization Sources</a>
+        <li><a href="http://bl.ocks.org/emeeks/068ef3e4106e155467a3">d3.orbit example</a></li>
+        <li><a href="https://bl.ocks.org/syntagmatic/6c149c08fc9cde682635">Satellite Ground Paths</a>
+            My project would be similar, but in a 3D plane with more variation of satellites. perhaps an adjustable timer with mouseover tool tips providing information on each object. </li>
+        <li><a href="https://sureshlodha.github.io/CMPS263_Winter2018/CMPS263FinalProjects/IridiumFlares/flares.html">
+            Satellite Flares</a> A past project showing placements of flares in the night sky. My project would be very different: 
+            showing a 3D globe with moving sattelites-- it would also not limit itself to just FLARE satellties. </li>
+        <li><a href="https://bl.ocks.org/mbostock/7ea1dde508cec6d2d95306f92642bc42">Draggable 3D globe</a></li>
+        <script type="text/javascript">
+            // Your beautiful D3 code will go here
+        </script>
+    </body>
+</html>
